@@ -1,0 +1,42 @@
+{
+  "auth": [
+    { "id": 1, "isAuthenticated": false }
+  ],
+  "todos": [
+    {
+      "title": "ів",
+      "description": "йцу",
+      "checked": "false",
+      "creationDate": "2026-03-08T10:46:25.149Z",
+      "id": 1
+    },
+    {
+      "title": "йцу",
+      "description": "фіс",
+      "checked": "false",
+      "creationDate": "2026-03-08T10:46:40.148Z",
+      "id": 2
+    },
+    {
+      "title": "qwe",
+      "description": "sad",
+      "checked": "false",
+      "creationDate": "2026-03-08T10:48:21.515Z",
+      "id": 3
+    },
+    {
+      "title": "qwe",
+      "description": "sadf",
+      "checked": "false",
+      "creationDate": "2026-03-08T10:48:37.132Z",
+      "id": 4
+    },
+    {
+      "title": "ret",
+      "description": "fsd",
+      "checked": "false",
+      "creationDate": "2026-03-08T10:48:50.463Z",
+      "id": 5
+    }
+  ]
+}
