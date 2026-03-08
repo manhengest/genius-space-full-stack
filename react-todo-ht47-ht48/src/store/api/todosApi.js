@@ -1,6 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
-const API_BASE = "http://localhost:3030";
+import { API_BASE } from "../../config/api";
 
 export const todosApi = createApi({
   reducerPath: "todosApi",

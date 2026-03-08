@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:3030";
+import { API_BASE } from "../config/api";
 
 export const fetchAuthStatus = async () => {
   const res = await fetch(`${API_BASE}/auth/1`);

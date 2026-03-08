@@ -1,0 +1,25 @@
+# Render Blueprint - deploy backend first, then set VITE_API_URL for the frontend
+# After backend deploys, add env var: VITE_API_URL = https://react-todo-api.onrender.com
+
+services:
+  # API backend (json-server)
+  - type: web
+    name: react-todo-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  # Frontend (Vite/React static site)
+  - type: web
+    name: react-todo-app
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: dist
+    envVars:
+      # Set to your backend URL after first deploy, e.g. https://react-todo-api.onrender.com
+      - key: VITE_API_URL
+        sync: false
