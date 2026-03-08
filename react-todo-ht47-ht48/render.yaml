@@ -7,6 +7,7 @@ services:
     name: react-todo-api
     runtime: node
     plan: free
+    rootDir: react-todo-ht47-ht48
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -17,6 +18,7 @@ services:
   - type: web
     name: react-todo-app
     runtime: static
+    rootDir: react-todo-ht47-ht48
     buildCommand: npm run build
     staticPublishPath: dist
     envVars:

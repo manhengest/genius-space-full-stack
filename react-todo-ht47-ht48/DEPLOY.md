@@ -19,6 +19,7 @@ This app is configured for Render with two services: a **Web Service** (API) and
 
 1. **New** → **Web Service**
 2. Connect repo, set:
+   - **Root Directory:** `react-todo-ht47-ht48` (required for monorepo)
    - **Build Command:** `npm install`
    - **Start Command:** `npm start`
    - **Plan:** Free
@@ -28,6 +29,7 @@ This app is configured for Render with two services: a **Web Service** (API) and
 
 1. **New** → **Static Site**
 2. Connect the same repo, set:
+   - **Root Directory:** `react-todo-ht47-ht48` (required for monorepo)
    - **Build Command:** `npm run build`
    - **Publish Directory:** `dist`
    - **Environment Variable:** `VITE_API_URL` = your backend URL (e.g. `https://react-todo-api.onrender.com`)
